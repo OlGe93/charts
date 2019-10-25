@@ -10,6 +10,10 @@ image:
   tag: v3.1.0-k8s1.11
   pullPolicy: IfNotPresent
 
+# Specify a secret with credentials to pull from a private registry
+imagePullSecrets: []
+#  - name: <secretName>
+
 nfs:
   server:
   path: /ifs/kubernetes
