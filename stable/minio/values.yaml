@@ -9,6 +9,10 @@ image:
   tag: RELEASE.2019-08-07T01-59-21Z
   pullPolicy: IfNotPresent
 
+# Specify a secret with credentials to pull from a private registry
+imagePullSecrets: []
+#  - name: <secretName>
+
 ## Set default image, imageTag, and imagePullPolicy for the `mc` (the minio
 ## client used to create a default bucket).
 ##
