@@ -5,6 +5,10 @@ image:
   tag: v1.8.0
   pullPolicy: IfNotPresent
 
+# Specify a secret with credentials to pull from a private registry
+imagePullSecrets: []
+#  - name: <secretName>
+
 replicas: 1
 
 service:
