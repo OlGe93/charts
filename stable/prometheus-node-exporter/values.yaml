@@ -6,6 +6,10 @@ image:
   tag: v0.18.0
   pullPolicy: IfNotPresent
 
+# Specify a secret with credentials to pull from a private registry
+imagePullSecrets: []
+#  - name: <secretName>
+
 service:
   type: ClusterIP
   port: 9100
